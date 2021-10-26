@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="entrada">
+            <div class="campo_input">
+                <label for="valor_usuario">Digite um valor entre 0 e 10</label>
+                <input type="number" name="valor_usuario" id="valor_usuario" min="0" max="10">
+            </div>
+            <div class="campo_botao">
+                <button class="botao" id="iniciar">Jogar</button>
+                <button class="botao" id="reiniciar">Nova Partida</button>
+            </div>
+            <div class="resultado">
+                <span id="valor1">__</span> + <span id="valor2">__</span> = <span id="result">__</span>
+            </div>
+        </section>
+
+        <section class="pontuacao">
+            <div class="pontos">
+                Usuário: <span id="valor_ponto_user">0</span>
+            </div>
+            <div class="pontos">
+                Computador: <span id="valor_ponto_pc">0</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

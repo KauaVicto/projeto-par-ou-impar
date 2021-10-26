@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+    font-weight: 600;
+    color: white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    position: relative;
+    width: 60%;
+    border: 1px solid black;
+    height: 400px;
+    background-color: rgb(21, 110, 126);
+}
+main section{
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+/* Entrada de dados */
+
+main .entrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .entrada .campo_input{
+    width: 80%;
+    margin: 5px auto;
+}
+
+main .entrada .campo_input input{
+    width: 100%;
+    border: 2px solid rgb(15, 66, 73);
+    box-shadow: 1px 1px 5px rgb(65, 64, 64);
+    background-color: rgb(20, 90, 102);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* botões */
+main .entrada .campo_botao{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+}
+main .entrada .campo_botao .botao{
+    width: 40%;
+    height: 30px;
+    color: white;
+    background: none;
+    border-radius: 15px;
+    border: 1px solid white;
+    transition: .4s all ease;
+    cursor: pointer;
+}
+
+main .entrada .campo_botao .botao:hover{
+    background-color: white;
+    color: rgb(20, 90, 102);
+}
+
+/* Resultado */
+main .resultado{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Pontuação */
+main .pontuacao{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+}
+
+main .pontuacao .pontos{
+    border: 2px solid rgb(15, 66, 73);
+    box-shadow: 1px 1px 5px rgb(65, 64, 64);
+    background-color: rgb(20, 90, 102); 
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 80%;
+}
