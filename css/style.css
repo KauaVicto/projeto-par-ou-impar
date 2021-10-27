@@ -33,14 +33,18 @@ main section{
 /* Entrada de dados */
 
 main .entrada{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 main .entrada .campo_input{
-    width: 80%;
-    margin: 5px auto;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;   
 }
 
 main .entrada .campo_input input{
@@ -54,10 +58,11 @@ main .entrada .campo_input input{
 
 /* botões */
 main .entrada .campo_botao{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
     height: 10%;
 }
 main .entrada .campo_botao .botao{
@@ -76,11 +81,21 @@ main .entrada .campo_botao .botao:hover{
     color: rgb(20, 90, 102);
 }
 
+main .entrada .campo_botao .botao#iniciar{
+    position: absolute;
+    right: 0;
+}
+main .entrada .campo_botao .botao#reiniciar{
+    position: absolute;
+    left: 0;
+}
+
 /* Resultado */
 main .resultado{
     width: 100%;
     text-align: center;
-    margin: 10px 0;
+    position: absolute;
+    bottom: 30px;
 }
 
 /* Pontuação */
