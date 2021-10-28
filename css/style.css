@@ -83,6 +83,7 @@ main .entrada .campo_botao .botao:hover{
     color: rgb(20, 90, 102);
 }
 
+<<<<<<< Updated upstream
 main .entrada .campo_botao .botao#iniciar{
     position: absolute;
     right: 0;
@@ -90,6 +91,11 @@ main .entrada .campo_botao .botao#iniciar{
 main .entrada .campo_botao .botao#reiniciar{
     position: absolute;
     left: 0;
+=======
+main .entrada .campo_botao .botao #iniciar{
+    position: relative;
+    z-index: -2;
+>>>>>>> Stashed changes
 }
 
 /* Resultado */

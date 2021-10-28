@@ -1,4 +1,11 @@
 $(document).ready(function () {
+
+    $('#iniciar').css({opacity: '0'})
+    $('#reiniciar').on('click', function (e) {
+        e.preventDefault
+        $('#iniciar').css({opacity: '1'})
+    })
+
     let pontos_usuario = pontos_pc = 0
     let pronto_iniciar = false
 
@@ -43,6 +50,7 @@ $(document).ready(function () {
 
                 $('.resultado span#valor1').hide().html(valor_usuario).fadeIn(1000) // Apresenta o valor do usuário
 
+<<<<<<< Updated upstream
                 setTimeout(function () {
                     $('.resultado span#valor2').hide().html(valor_pc).fadeIn(1000) // Apresenta o valor do computador
                 }, 1000)
@@ -63,6 +71,13 @@ $(document).ready(function () {
 
                 setTimeout(function () { // Imprime os pontos dos jogadores
                     $('#valor_ponto_user').html(pontos_usuario)
+=======
+                if (resultado % 2 == 0) {
+                    pontos_usuario++
+                    $('#valor_ponto_user').html(pontos_usuario)
+                } else {
+                    pontos_pc++
+>>>>>>> Stashed changes
                     $('#valor_ponto_pc').html(pontos_pc)
                 }, 4000)
 
